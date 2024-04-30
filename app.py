@@ -24,7 +24,7 @@ def get_user(search):
 	searchDictionary = {}
 
 
-	for j in search(question, num=10, stop=10, pause=2): 
+	for j in search(question, num=50, stop=50, pause=2): 
 		searchItems.append(j)
 
 
