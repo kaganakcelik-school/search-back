@@ -1,6 +1,8 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 @app.route('/')
 def home():
@@ -34,5 +36,5 @@ def get_user(search):
 
 
 
-if __name__ == "__main__":
+if __name__ == "__app__":
 	app.run(debug=False, host='0.0.0.0')
